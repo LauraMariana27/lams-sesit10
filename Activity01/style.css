@@ -34,3 +34,6 @@ body{
 * {
     color: aliceblue;
 }
+button {
+    color:black !important;
+}
