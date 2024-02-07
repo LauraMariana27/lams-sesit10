@@ -1,18 +1,119 @@
 *{
     padding: 0;
-margin: 0;
+    margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
 header {
     width: 100vw;
-    height: 50px;
-    background-color: antiquewhite;
+    height: 3rem;
+    background-color: rgb(255, 222, 180);
     position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
 }
+
+.lista{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+}
+
 a {
     text-decoration: none;
     color:peru;
 }
+
 a:hover{
     text-decoration: underline;
+}
 
+.per01{
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    padding: 3.1rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.per02{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 183, 131);
+    padding: 3.1rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.tecno{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 175, 77);
+    padding: 3.1rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+.contwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    height: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.cont{
+    padding-top: 3.1rem;
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+    
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.txtcont{
+    padding-left: 3.1rem;
+}
+
+.lftcont{
+    width: 40%;
+    height: 80%;
+    background-color: aquamarine;
+}
+
+.rgtcont{
+    width: 40%;
+    height: 80%;
+    background-color: aqua;
+}
+
+.img{
+    overflow: hidden;
+    border-radius: 20rem;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img01{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 800ms ease-in-out;
+}
+
+.img01:hover{
+    transform: scale(1.2);    
 }
