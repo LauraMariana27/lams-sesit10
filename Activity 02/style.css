@@ -47,9 +47,12 @@ a:hover{
 
 .textLaura{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: 'Merriweather', serif;
     width: 60rem;
-    height: 20rem;
+    height: auto;
     padding: 2rem;
+    font-size: larger;
+    line-height: 40px;
 }
 
 .flex-section1 {    
@@ -89,9 +92,12 @@ a:hover{
 
 .textRafa{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: 'Merriweather', serif;
     width: 60rem;
-    height: 20rem;
+    height: auto;
     padding: 2rem;
+    font-size: larger;
+    line-height: 40px;
 }
 
 .flex-section2 {    
@@ -147,6 +153,7 @@ a:hover{
     height: 100vh;
     background-color: rgb(211, 120, 0);
     font-family: 'Shadows Into Light', cursive;
+    overflow: hidden;
 }
 
 .txtcont{
