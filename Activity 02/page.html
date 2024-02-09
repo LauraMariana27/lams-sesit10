@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -63,10 +64,35 @@
         <h1 class="txtcont">Contatos</h1>
         <div class="contwrap"> 
             <div class="lftcont">
-                <p>Nos mande mensagens!</p>
+                <p>Mensagem para a Laura:</p>
+                <label for="nmL">Nome:</label>
+                    <div>
+                        <input type="text" id="nmL">
+                    </div>
+                <label for="msgL">Mensagem:</label>
+                    <div>
+                        <textarea id="msgL" ></textarea>
+                    </div>
+            <button onclick="conferirMensagemL()">Conferir Mensagem</button>
+                <p>Mensagem para o Rafael:</p>
+                <label for="nmR">Nome:</label>
+                    <div>
+                        <input type="text" id="nmR">
+                    </div>
+                <label for="msgR">Mensagem:</label>
+                    <div>
+                        <textarea id="msgR" ></textarea>
+                    </div>
+            <button onclick="conferirMensagemR()">Conferir Mensagem</button>
             </div>
+
             <div class="rgtcont">
-                <p>blblabla</p>
+                <p>Nome: <span id="confNmL"></span></p>
+                <p>Mensagem: <span id="confMsgL"></span></p>
+                <button onclick="enviarL()">Whatsapp</button>
+                <p>Nome: <span id="confNmR"></span></p>
+                <p>Mensagem: <span id="confMsgR"></span></p>
+                <button onclick="enviarR()">Whatsapp</button>
             </div>
         </div>  
     </div>
