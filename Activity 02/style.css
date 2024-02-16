@@ -53,6 +53,7 @@ a:hover{
     padding: 2rem;
     font-size: larger;
     line-height: 40px;
+    border-radius: 1rem
 }
 
 .flex-section1 {    
@@ -98,6 +99,7 @@ a:hover{
     padding: 2rem;
     font-size: larger;
     line-height: 40px;
+    border-radius: 1rem;
 }
 
 .flex-section2 {    
@@ -128,7 +130,6 @@ a:hover{
     transform: scale(1.2);    
 }
 .tecno{
-    width: 100vw;
     height: 100vh;
     background-color: rgb(245, 160, 63);
     padding: 4rem;
@@ -142,6 +143,7 @@ a:hover{
     height: 10rem;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: black;
 }
 
 .imgH{
@@ -162,6 +164,7 @@ a:hover{
     height: 10rem;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: black;
 }
 
 .imgC{
@@ -182,6 +185,7 @@ a:hover{
     height: 10rem;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: black;
 }
 
 .imgJV{
@@ -195,6 +199,35 @@ a:hover{
     transform: scale(1.2);    
 }
 
+.TecnoCont{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 1rem;
+}
+
+.tecno-lang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text-lang{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: 'Merriweather', serif;
+    width: 30rem;
+    height: 26rem;
+    padding: 1.5rem;
+    text-align:justify;
+    border-radius: 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+.text-lang:hover{
+    transform: scale(1.1);    
+    background-color: rgb(243, 177, 102);;
+}
 .contwrap {
     display: flex;
     flex-direction: row;
@@ -279,4 +312,17 @@ button:hover{
 .botWhats{
     align-self:flex-end;
     background-color: bisque;
+}
+
+footer {
+    height: 7rem;
+    display: flex;
+    gap: 1rem;
+    padding:1rem;
+    justify-content: center;
+}
+
+#footer-copyright {
+    display: flex;
+    align-items: center;
 }
