@@ -1,39 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-   padding: 20px;
-   overflow-x: hidden;
-   background-color: cadetblue;
-}
-.principal{
+    width: 100vw;
+    height: 100vh;
     padding: 20px;
-    margin: 40px;
-    text-align: center;
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
-}
-
-.font-style{
-    font-size: 90px;
-    font-family: 'Sixtyfour', sans-serif;
-}
-.font-style02{
-    font-size: 1.8rem;
-}
-
-.div-calc{
-    padding: 20px;
+    overflow-x: hidden;
+    background-color: cadetblue;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    /* add gradient css */
 }
-.div-calc > div {
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    padding: 20px;
-    margin: 20px;
+.wrap-login{
+    position: relative;
 }
-* {
-    color: aliceblue;
+
+.form-div{
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 12px double;;
 }
-button,input {
-    color:black !important;
+
+.img-style{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    /* add box shadow */
 }
+
+/* FODASE SÓ FAZ DO JEITO QUE TU QUISER DESIGN GRAFICA */
