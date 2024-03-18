@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    <div class="principal">
+        <h1 class="font-style">Cálculos</h1>
+        <p class="font-style02">Atividades simples para a Aula de Desenvolvimento</p>
+    </div>
+
+    <div class="div-calc">
+       
+        <div>
+            <h2>Soma</h2>
+            <div>
+                <label for="n1s">Número 01</label>
+                <input type="number" id="n1s">
+            </div>
+            <div>
+                <label for="n2s">Número 02</label>
+                <input type="number" id="n2s">
+            </div>
+            <div>
+                <button onclick="somar()">Calcular</button>
+            </div>
+           <div>
+               <p>Resultado: <span id="resultsoma"></span></p>
+           </div> 
+        </div> 
+
+        <div>
+            <h2>Subtração</h2>
+            <div>
+                <label for="n1sub">Número 01</label>
+                <input type="number" id="n1sub">
+            </div>
+            <div>
+                <label for="n2sub">Número 02</label>
+                <input type="number" id="n2sub">
+            </div>
+            <div>
+                <button onclick="subtrair()">Calcular</button>
+            </div>
+           <div>
+               <p>Resultado: <span id="resultsub"></span></p>
+           </div> 
+        </div>
+
+        <div>
+            <h2>Multiplicação</h2>
+            <div>
+                <label for="n1m">Número 01</label>
+                <input type="number" id="n1m">
+            </div>
+            <div>
+                <label for="n2m">Número 02</label>
+                <input type="number" id="n2m">
+            </div>
+            <div>
+                <button onclick="multiplicar()">Calcular</button>
+            </div>
+           <div>
+               <p>Resultado: <span id="resultmulti"></span></p>
+           </div> 
+        </div>
+
+        <div>
+            <h2>Divisão</h2>
+            <div>
+                <label for="n1d">Número 01</label>
+                <input type="number" id="n1d">
+            </div>
+            <div>
+                <label for="n2d">Número 02</label>
+                <input type="number" id="n2d">
+            </div>
+            <div>
+                <button onclick="dividir()">Calcular</button>
+            </div>
+           <div>
+               <p>Resultado: <span id="resultdiv"></span></p>
+           </div> 
+        </div>
+
+        <div>
+            <h2>Média</h2>
+            <div>
+                <label for="n1med">Número 01</label>
+                <input type="number" id="n1med">
+            </div>
+            <div>
+                <label for="n2med">Número 02</label>
+                <input type="number" id="n2med">
+            </div>
+            <div>
+                <label for="n3med">Número 03</label>
+                <input type="number" id="n3med">
+            </div>
+            <div>
+                <button onclick="media()">Calcular</button>
+            </div>
+           <div>
+               <p>Resultado: <span id="resultmedia"></span></p>
+           </div> 
+        </div>
+
+    </div>
+
+</body>
+</html>
