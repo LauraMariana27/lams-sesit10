@@ -12,7 +12,7 @@
 <body>
     
     <div class="wrap-login">
-        <img src="" alt="">
+        <img class="img-style" src="../Img/perfume.avif" alt="">
         <div class="form-div">
             <h1>Credenciais</h1>
 
@@ -24,6 +24,9 @@
             <button onclick="login()">Entrar</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div class="error-div" id="error-modal">
+        <h3>Login ou Senha Incorreto</h3>
+        <button onclick="fecharModal()">OK</button>
+    </div>
 </body>
 </html>

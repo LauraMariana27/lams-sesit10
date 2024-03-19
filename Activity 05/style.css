@@ -11,14 +11,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* add gradient css */
-}
+    background: linear-gradient(90deg, rgba(79,0,0,1) 6%, rgba(217,145,0,1) 53%, rgba(87,3,0,1) 94%);}
 .wrap-login{
     position: relative;
 }
 
 .form-div{
-    background-color: aqua;
+    background-color: rgb(202, 138, 0);
     width: 500px;
     height: 500px;
     padding: 1rem;
@@ -27,7 +26,9 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    border: 12px double;;
+    border: 12px double;
+    border-color: rgb(148, 59, 0);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .img-style{
@@ -35,7 +36,7 @@ body{
     top: -20px;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 1rem;
+    border-radius: 100%;
     /* add box shadow */
 }
 
