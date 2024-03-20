@@ -11,10 +11,11 @@ function login(){
     var nome = $("#nome").val();
     var senha = $("#senha").val();
 
-    if(nome && senha && nome === "admin" && senha === "12345"){
+    console.log(nome, senha)
+    if(nome && senha && nome === "lams@dev.system" && senha === "Lalalams"){
         const user = {
             name: nome,
-            dataEntrada: new Date(),
+            dataEntrada: formatarData (new Date()),
             id: Math.floor(Math.random() * 100000)
         }
         localStorage.setItem("usuario", JSON.stringify(user))
@@ -25,3 +26,13 @@ function login(){
 }
 
 const fecharModal = () => document.getElementById('error-modal').style.display = "none"
+
+function formatarData(data){
+    var options = {
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric"
+    }
+    return data.toLocaleString("pt-BR", options)
+}

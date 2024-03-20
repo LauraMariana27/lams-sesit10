@@ -1,6 +1,8 @@
 *{
     padding: 0;
     margin: 0;
+    color: #ffff;
+
 }
 body{
     width: 100vw;
@@ -9,18 +11,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, rgba(79,0,0,1) 6%, rgba(217,145,0,1) 53%, rgba(87,3,0,1) 94%);
+    background: linear-gradient(90deg, rgba(0,16,60,1) 0%, rgba(0,159,150,1) 50%, rgba(0,16,60,1) 100%);
 }
 
 .wrap-login{
     position: relative;
-    box-shadow: rgba(152, 44, 189, 0.755) 0px 7px 29px 0px;
+    box-shadow: rgba(6, 0, 85, 0.993) 0px 7px 29px 0px;
     border-radius: 20px;
+    
 }
 
 .form-div{
-    width: 500px;
-    height: 500px;
+    width: 25rem;
+    height: auto;
     padding: 1rem;
     gap: 2vh;
     display: flex;
@@ -29,79 +32,78 @@ body{
     justify-content: center;
     border-radius: 20px;
     border: 12px double;
-    border-color: rgb(148, 59, 0);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-color: rgb(0, 48, 66);
+    box-shadow: rgba(0, 3, 43, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .img-style{
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 20px;
-    box-shadow: rgba(152, 44, 189, 0.755) 0px 7px 29px 0px;
-    z-index: 999;
+    box-shadow: rgba(6, 0, 85, 0.993) 0px 7px 29px 0px;
+    width: 20rem;
 }
 
 input{
-    color: #ffff;
-    box-shadow: rgba(152, 44, 189, 0.755) 0px 7px 29px 0px;
-    background-color: rgba(137, 43, 226, 0.761);
+    color: rgb(1, 58, 105);
+    background-color: rgba(0, 39, 110, 0.761);
     border: none;
-    padding: 20px 40px;
-    border-radius: 999px;
-    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: 21rem;
 }
 
-input::placeholder{
-    color: #ffff;
+#nome, #senha{
+    color: #ffff !important;
 }
 
 input:focus{
     color: #ffff;
-    box-shadow: rgba(152, 44, 189, 0.755) 0px 7px 29px 0px;
-    background-color: rgba(137, 43, 226, 0.761);
-
+    box-shadow: rgba(6, 0, 85, 0.993) 0px 7px 29px 0px;
+    background-color: rgba(2, 57, 158, 0.761);
+    outline: none;
 }
 
-.key{
-    opacity: 0.7;
-    position: absolute;
-    top: 14px;
-    right: 10px;
-}
-
-.key:hover{
-    cursor: pointer;
-    opacity: 1;
+input:focus::placeholder{
+    color: rgb(187, 187, 187);
 }
 
 button{
-    padding: 10px 40px;
+    padding: 1rem;
     border: none;
-    background-color: rgba(46, 6, 83, 0.761);
+    background-color: rgba(6, 7, 83, 0.761);
     color: rgb(213, 206, 219);
-    font-size: 1.4rem;
-    border-radius: 999px;
+    font-size: 1.2rem;
+    border-radius: 1rem;    
+
 }
 
 button:hover{
-    box-shadow: rgba(17, 9, 20, 0.755) 0px 7px 29px 0px;
     color: #ffff;
-    cursor:pointer;
+    cursor:pointer;    
+    box-shadow: rgba(6, 0, 85, 0.993) 0px 7px 29px 0px;
 }
 
 .error-div{
     display: none;
     position: absolute;
-    bottom: 5%;
-    background-color: rgba(97, 13, 45, 0.719);
-    padding: 2rem;
-    flex-direction: row;
+    background-color: rgb(155, 1, 1);
+    padding: 3rem;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    gap: 1vh;
-    box-shadow: rgba(17, 9, 20, 0.755) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    gap: 3vh;
+    box-shadow: rgba(0, 0, 0, 0.755) 0px 7px 29px 0px;
     color: #ffff;
+}
+
+.error-btn{
+    background-color: rgb(214, 0, 0);
+    padding: 1rem 2rem;
+}
+
+button:hover{
+    color: #ffff;
+    cursor:pointer;    
+    box-shadow: rgba(20, 0, 0, 0.755) 0px 7px 29px 0px;
 }
