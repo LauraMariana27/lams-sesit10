@@ -2,61 +2,61 @@
     {
     "id": 1,
     "descricao": "Acqua di Giò Profondo, Giorgio Armani",
-    "imagem": "../Imagens/01.jpg",
+    "imagem": "../Img",
     "preco": 100.00
     },
     {
     "id": 2,
     "descricao": "Brisa, Phebo",
-    "imagem": "../Imagens/02.jpg",
+    "imagem": "../Img",
     "preco": 200.00
     },
     {
     "id": 3,
     "descricao": "Explorer Ultra Blue, Montblanc",
-    "imagem": "../Imagens/03.jpg",
+    "imagem": "../Img",
     "preco": 300.00
     },
     {
     "id": 4,
     "descricao": "Kaiak Oceano, Natura",
-    "imagem": "../Imagens/04.jpg",
+    "imagem": "../Img",
     "preco": 400.00
     },
     {
     "id": 5,
     "descricao": "Kenzo Homme, EDP",
-    "imagem": "../Imagens/05.webp",
+    "imagem": "../Img",
     "preco": 500.00
     },
     {
     "id": 6,
     "descricao": "Silence the Sea, Strangelove NYC",
-    "imagem": "../Imagens/05.webp",
+    "imagem": "../Img",
     "preco": 500.00
     },
     {
     "id": 7,
     "descricao": "Costarela, Carner Barcelona",
-    "imagem": "../Imagens/05.webp",
+    "imagem": "../Img",
     "preco": 500.00
     },
     {
-    "id": 5,
-    "descricao": "Kenzo Homme – EDP",
-    "imagem": "../Imagens/05.webp",
+    "id": 8,
+    "descricao": "Marinis, Santa Eulalia",
+    "imagem": "../Img",
     "preco": 500.00
     },
     {
-    "id": 5,
-    "descricao": "Kenzo Homme – EDP",
-    "imagem": "../Imagens/05.webp",
+    "id": 9,
+    "descricao": "Sea Foam, Art de Parfum",
+    "imagem": "../Img",
     "preco": 500.00
     },
     {
-    "id": 5,
-    "descricao": "Kenzo Homme – EDP",
-    "imagem": "../Imagens/05.webp",
+    "id": 10,
+    "descricao": "Mémoires de Mustique, Eight & Bob",
+    "imagem": "../Img",
     "preco": 500.00
     }
 ]
