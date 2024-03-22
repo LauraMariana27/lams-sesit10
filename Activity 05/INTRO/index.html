@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+    <div class="wrap-login">
+        
+        <div class="form-div">
+           <img class="img-style" src="../../Img/logo.jpg" alt=""> 
+           <h1>Credenciais</h1>
+
+            <input type="text" placeholder="Insira seu login">                
+            <input type="password" placeholder="Insira sua senha" id="senha">
+            <button onclick="login()">Entrar</button>
+        </div>
+    </div>
+    <div class="error-div" id="error-modal">
+        <h3>Login ou Senha Incorreto</h3>
+        <button onclick="fecharModal()">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

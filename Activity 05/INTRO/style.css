@@ -64,7 +64,7 @@ input:focus{
 }
 
 input:focus::placeholder{
-    color: rgb(187, 187, 187);
+    color: rgb(187, 187, 187) !important;
 }
 
 button{
