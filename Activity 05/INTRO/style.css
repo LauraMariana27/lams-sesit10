@@ -43,7 +43,6 @@ body{
 }
 
 input{
-    color: rgb(1, 58, 105);
     background-color: rgba(0, 39, 110, 0.761);
     border: none;
     padding: 1rem;
@@ -67,17 +66,17 @@ input:focus::placeholder{
     color: rgb(187, 187, 187) !important;
 }
 
-button{
+.button{
     padding: 1rem;
     border: none;
     background-color: rgba(6, 7, 83, 0.761);
-    color: rgb(213, 206, 219);
+    color: rgb(219, 206, 206);
     font-size: 1.2rem;
     border-radius: 1rem;    
 
 }
 
-button:hover{
+.button:hover{
     color: #ffff;
     cursor:pointer;    
     box-shadow: rgba(6, 0, 85, 0.993) 0px 7px 29px 0px;
@@ -98,12 +97,19 @@ button:hover{
 }
 
 .error-btn{
-    background-color: rgb(214, 0, 0);
+    background-color: rgb(121, 0, 0);
     padding: 1rem 2rem;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    border: none;
+
 }
 
-button:hover{
+.error-btn:hover{
     color: #ffff;
     cursor:pointer;    
-    box-shadow: rgba(20, 0, 0, 0.755) 0px 7px 29px 0px;
+    background-color: rgb(161, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.755) 0px 7px 29px 0px;
+    opacity: 1;
 }

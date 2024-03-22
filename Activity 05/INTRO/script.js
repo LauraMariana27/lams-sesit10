@@ -12,14 +12,14 @@ function login(){
     var senha = $("#senha").val();
 
     console.log(nome, senha)
-    if(nome && senha && nome === "lams@dev.system" && senha === "Lalalams"){
+    if(nome && senha && nome == "lams@dev.system" && senha == "Lalalams"){
         const user = {
             name: nome,
             dataEntrada: formatarData (new Date()),
             id: Math.floor(Math.random() * 100000)
         }
         localStorage.setItem("usuario", JSON.stringify(user))
-        window.location.href = "../Loja"
+        window.location.href = "../LOJA"
     }else{
         document.getElementById('error-modal').style.display = "flex"
     }

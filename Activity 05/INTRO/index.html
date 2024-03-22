@@ -17,14 +17,14 @@
            <img class="img-style" src="../../Img/logo.jpg" alt=""> 
            <h1>Credenciais</h1>
 
-            <input type="text" placeholder="Insira seu login">                
+            <input type="text" placeholder="Insira seu login" id="nome">                
             <input type="password" placeholder="Insira sua senha" id="senha">
-            <button onclick="login()">Entrar</button>
+            <button class="button" onclick="login()">Entrar</button>
         </div>
     </div>
     <div class="error-div" id="error-modal">
         <h3>Login ou Senha Incorreto</h3>
-        <button onclick="fecharModal()">OK</button>
+        <button class="error-btn" onclick="fecharModal()">OK</button>
     </div>
     <script src="script.js"></script>
 </body>
