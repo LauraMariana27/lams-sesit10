@@ -13,7 +13,7 @@ $(document).ready(function() {
 
         $.each(carrinho, function(index, item){
             const listItem = $("<li>").text(
-                `${item.descricao} - Preço: R$${item.preço}`
+                `${item.descricao} - Preço: R$${item.preco}`
             )
             const removeButton = $('<button>').text("X").css('margin-left', '10px').click(function(){
                 removeItemCarrinho(index)
@@ -39,3 +39,39 @@ $(document).ready(function() {
     }
     exibirCarrinho();
 });
+
+function gerarDocumentoWord(){
+    const listaElement = document.getElementById("lista")
+    const totalElement = document.getElementById("total")
+    const listaClone = listaElement.cloneNode(true);
+
+    $(listaClone).find("button").remove();
+
+    const listaHtml = listaClone.innerHTML;
+    const totalHtml = totalElement.innerHTML;
+
+    const conteudoHtml = `
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+        </head>
+        <body>
+            <h1>Pedido Confrimado</h1>
+            <h3>Agradecemos sua preferência!</h3>
+            <br>
+            ${listaHtml}
+            <br>
+            <br>
+            ${totalHtml}
+        </body>
+    </html>
+`;
+
+const blob = new Blob([conteudoHtml], {type: "application/msword"});
+const link = document.createElement ("a");
+link.href = URL.createObjectURL(blob)
+link.download = "carrinho.doc";
+link.click();
+document.getElementById("pedido").style.display = "block";
+}
+const successClose = () => document.getElementById("pedido").style.display = "none";

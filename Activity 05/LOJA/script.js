@@ -10,7 +10,7 @@ window.onload = function () {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../LOJA/loja.json").then((response) => response.json()).then((data) => {
+    fetch("../LOJA/dados.json").then((response) => response.json()).then((data) => {
         produtos = data;
         const produtosContainer = document.getElementById("produtos-container");
 
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }).catch((error) => console.error("Erro ao carregar o arquivo JSON", error))
 
-    $('#produtos-container').on('click', ".btn-adicionar-ao-carrinho", function () {
+    $('#produtos-container').on('click', ".btn-carrinho", function () {
         const indexDoProduto = $(this).data("indice");
         const produtoSelecionado = produtos[indexDoProduto];
 
